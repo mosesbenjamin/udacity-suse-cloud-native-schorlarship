@@ -18,3 +18,11 @@
 - curl -sfL https://get.k3s.io | sh
 - sudo su
 - kubectl get nodes
+
+### Kubeconfig With kind
+
+- Install kind
+- kind create cluster --name demo
+- kubectl cluster-info
+- kubectl get nodes [-o wide]
+- kubectl describe node -node-name [localhost | grep CIDR]
